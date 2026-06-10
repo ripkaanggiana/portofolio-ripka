@@ -518,8 +518,9 @@
 
   /* ============ RESPONSIVE ============ */
   @media (max-width: 768px) {
-    .hero { grid-template-columns: 1fr; }
-    .hero-right { display: none; }
+    .hero { grid-template-columns: 1fr; min-height: auto; padding-bottom: 3rem; }
+    .hero-right { display: flex; width: 100%; justify-content: center; padding: 2rem 0 1rem; background: var(--gold-light); }
+    .hero-right .photo-frame { width: 55%; max-width: 220px; }
     .about-grid { grid-template-columns: 1fr; }
     .about-photo-wrap { position: static; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
@@ -563,12 +564,14 @@
   </div>
   <div class="hero-right">
     <div class="photo-frame">
+      <!-- GANTI: ubah src di bawah dengan path foto kamu -->
       <img src="Profil.jpeg" alt="Ripka Anggiana">
-      <div class="photo-placeholder">
+      <!-- <div class="photo-placeholder">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
         </svg>
-      </div>
+        <span>Ganti dengan foto kamu</span>
+      </div> -->
     </div>
     <p class="hero-deco">Tasikmalaya, Jawa Barat 🌸</p>
   </div>
@@ -579,13 +582,15 @@
   <div class="about-grid">
     <div class="about-photo-wrap reveal-left">
       <div class="about-photo">
+        <!-- GANTI: ganti src dengan foto lainnya -->
         <img src="Profil2.jpeg" alt="Ripka Anggiana">
-        <div class="photo-placeholder" style="background:var(--rose-light);">
+        <!-- <div class="photo-placeholder" style="background:var(--rose-light);">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
             <path d="M21 15l-5-5L5 21"/>
           </svg>
-        </div>
+          <span>Foto tentang</span>
+        </div> -->
       </div>
       <p class="about-photo-caption">Ripka Anggiana — Tasikmalaya</p>
     </div>
@@ -689,25 +694,25 @@
   <p class="gallery-intro reveal d3">Dokumentasi perjalanan, kegiatan kerja, dan momen berharga lainnya.</p>
   <div class="gallery-grid">
     <div class="gallery-item big reveal d2">
-      <!-- <img src="galeri1.jpg" alt="Galeri 1"> -->
-      <div class="gallery-placeholder">
+      <img src="Gambar1.jpeg" alt="Galeri 1">
+      <!-- <div class="gallery-placeholder">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
           <path d="M21 15l-5-5L5 21"/>
         </svg>
         <span>Foto utama</span>
-      </div>
+      </div> -->
       <div class="gallery-overlay">🌸</div>
     </div>
     <div class="gallery-item reveal d3">
-      <!-- <img src="galeri2.jpg" alt="Galeri 2"> -->
-      <div class="gallery-placeholder">
+      <img src="Gambar2.jpeg" alt="Galeri 2">
+      <!-- <div class="gallery-placeholder">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
           <path d="M21 15l-5-5L5 21"/>
         </svg>
         <span>Foto 2</span>
-      </div>
+      </div> -->
       <div class="gallery-overlay">✨</div>
     </div>
     <div class="gallery-item reveal d4">
@@ -783,12 +788,11 @@
             <p class="contact-link-value">ripkaanggiana369@gmail.com</p>
           </div>
         </a>
-        <!-- GANTI: isi href dan username Instagram kamu -->
-        <a href="https://instagram.com/" class="contact-link" target="_blank">
+        <a href="https://instagram.com/rpka_aaa" class="contact-link" target="_blank">
           <div class="contact-link-icon">📸</div>
           <div>
             <p class="contact-link-label">Instagram</p>
-            <p class="contact-link-value">@rpka_aaa</p>
+            <p class="contact-link-value">@username_kamu</p>
           </div>
         </a>
       </div>
